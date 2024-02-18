@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>HTML with CSS and JavaScript</title>
+
+    <style>
+    
+    body {
+        background-color: #0F0F0F ;
+    }
+
+    #name {
+
+            color: goldenrod;
+            font-size: 350%;
+            margin: 0% ;
+            text-align: center;
+            font-family: Garamond;
+            z-index: 1 ;
+
+    }
+
+    .intro {
+            color: goldenrod;
+            z-index: 2;
+            text-align: center;
+            font-size: large;
+          }
+
+
+    .tagline {
+            color: goldenrod;
+            z-index: 3;
+            text-align: center;
+            font-size: large;
+              }
+
+    #navbar {
+
+        background-color: #22282B;
+        height: 100px;
+        margin-top: 70px;
+        z-index: 2 ;
+        width: 2000px;
+
+    }
+
+    #navbar-contents{
+
+        color: goldenrod;
+        list-style-type: none;
+        display: flex;
+        margin: 0 px; padding: 0;
+    }
+
+
+   #navbar-contents a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: goldenrod;
+        margin: 20px;
+        padding-left: 30px;
+        font-size: 20px;   
+        align-items: center;     
+        margin-left: 130px;
+    }
+    
+    #navbar ul li a:hover{
+        color: white;
+
+    }
+
+    #connectimg {
+
+        display: flex;
+
+    }
+
+
+    #img1{
+
+        z-index: 3;
+        float: left; /* Align image to the left */
+        margin-right: 10px; /* Add margin to create space between image and text */
+    }
+
+
+    #connect {
+        color: goldenrod;
+        margin-top: 300px;
+        z-index: 4;
+        font-size: large;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        flex-grow: 1;
+        font-size: larger;
+            }
+
+     .contactForm {
+
+        max-width: 800px;
+        max-width: 1100px;
+        margin: 50px auto;
+        color: goldenrod;
+        align-items: center;
+        align-self: center;
+    }
+
+    .entities {
+        color: goldenrod;
+        margin-left: 100px;
+    }
+
+   #enterName {
+    font-size: 14px; /* Adjust the font size as needed */
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    background-color: black;
+    color: white;
+   }
+
+   #enterSub {
+    font-size: 14px; /* Adjust the font size as needed */
+    width: 200px; /* Adjust the width as needed */
+    padding: 6px; /* Adjust the padding as needed */
+    background-color: black;
+    color: white;
+   }
+
+
+   #enterMail {
+    font-size: 14px; /* Adjust the font size as needed */
+    width: 200px; /* Adjust the width as needed */
+    padding: 6px; /* Adjust the padding as needed */
+    background-color: black;
+    color: white;
+   }
+
+   #btn {
+
+    background-color: black;
+    color: white ;
+    font-size: large;
+    padding: 29px 20px;
+    border-color: goldenrod;
+   }
+
+
+    </style>
+
+</head>
+
+<body>
+    <p id="name">Sabarinath S</p>
+    <p class=intro> Hi there, I am Sabarinath S, and welcome to my personal portfolio site. </p>
+    <p class="tagline"> I am just a young guy in a room in my parents house, trying to build a living for all of us.  </p> 
+
+    
+    <div id="navbar">
+
+        <ul id="navbar-contents">
+
+        <li> <a href="#LatestRead"> Latest Read  </a> </li>
+        <li> <a href="#Blog"> Blog  </a> </li>
+        <li> <a href="#Resume"> Resume </a> </li>
+        <li> <a href="#SocialMedia"> Social Media  </a> </li>
+        <li> <a href="#AboutMe"> About Me  </a> </li>
+
+
+    </ul>
+
+    </div>
+
+    <div id="connectimg">    
+        
+        <div id="img1">
+
+            <img src="pexels-photo-2718737.jpg">
+    
+        </div>
+
+    <div id="connect">
+        What is Lorem Ipsum? <br> <br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+    
+ 
+
+</div>
+If you want to connect with me, you can fill up the form below.  
+
+    <div class="contactForm">
+
+        <div class="entities">
+
+        <label for="yName"> Name </label>
+        <input type="text" id="enterName" placeholder="Enter Your Name">
+
+        <label for="sub"> Subject Matter  </label>
+        <input type="text" id="enterSub" placeholder="What interested you?">
+
+        <label for="Mail"> Email </label>
+        <input type="email" id="enterMail" placeholder="Enter your email ID">
+
+        <button id="btn"> Submit </button>
+        
+
+    </div>
+    </div>
+
+    
+
+    <script>
+    
+        var x = document.getElementById("btn");
+
+        x.onclick = function () {
+
+                var a = document.getElementById("enterName");
+                var b = a.value;
+                alert(b);
+        }
+
+
+    </script>
+
+
+</body>
+</html>
